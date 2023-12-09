@@ -27,7 +27,7 @@ query_job = client.query(
     LIMIT 10"""
 )
 
-results = query_job.result()  # Waits for job to complete.
+results = query_job.result()
 
 for row in results:
   print(f"\n{row.url} : {row.view_count} views for question\n{row.title}\n{row.body}\n")
