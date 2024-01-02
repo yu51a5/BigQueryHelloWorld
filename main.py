@@ -41,6 +41,6 @@ results = [client.query(qs).result() for qs in query_str]
 for i, r in enumerate(results):
   print(f'\nQuery {i}')
   for row in r:
-    print(f"\nQuestion `{row.title}` created on {row.creation_date}, viewed {row.view_count} time(s):\n`URL {row.url}`\nContents `{row.body}`\n")
+    print(f"\nQuestion `{row.title}`\nCreated on {row.creation_date}, viewed {row.view_count} time(s):\n`URL {row.url}`\nContents `{row.body}`\n")
 
 print("all done!")
